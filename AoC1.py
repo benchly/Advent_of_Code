@@ -10,7 +10,7 @@ print("INCOMING TRANSMISSION")
 print("Re: Database verification for file day1input.txt")
 print("Connecting to Sleighbells AI 5000...")
 
-time.sleep(10)
+time.sleep(5)
 
 def slowprint(str):
     for letter in str:
@@ -22,9 +22,9 @@ slowprint("Ah-ha! There you are! \n")
 slowprint("Santa is stuck in space. Again. \n")
 slowprint("It's up to us to save him. Again. \n")
 slowprint("We need to calculate the amount of fuel he needs to get home. \n")
-slowprint("Let me check the database...give me about 20 seconds. \n")
+slowprint("Let me check the database...give me about 10 seconds. \n")
 
-time.sleep(20)
+time.sleep(10)
 
 # The 'database' is called day1input.txt
 
