@@ -10,7 +10,7 @@ print("INCOMING TRANSMISSION")
 print("Re: Database verification for file day1input.txt")
 print("Connecting to Sleighbells AI 5000...")
 
-time.sleep(5)
+time.sleep(2)
 
 def slowprint(str):
     for letter in str:
@@ -22,9 +22,9 @@ slowprint("Ah-ha! There you are! \n")
 slowprint("Santa is stuck in space. Again. \n")
 slowprint("It's up to us to save him. Again. \n")
 slowprint("We need to calculate the amount of fuel he needs to get home. \n")
-slowprint("Let me check the database...give me about 10 seconds. \n")
+slowprint("Let me check the database...give me about 5 seconds. \n")
 
-time.sleep(10)
+time.sleep(5)
 
 # The 'database' is called day1input.txt
 
@@ -36,7 +36,20 @@ with open(filename, 'r') as f:
         num_lines += 1
 slowprint("Oh, right. Man, I am getting old. \n")
 slowprint(f"We have {num_lines} modules to account for. \n")
+slowprint(f"Let's get the mass of all {num_lines} in a list. \n")
+slowprint("This might take a few seconds...")
 
+time.sleep(3)
+
+massList = []
+
+with open(filename, 'r') as file:
+    for line in file:
+        moduleMass = line[:-1]
+        massList.append(moduleMass)
+
+slowprint("Ah, there we are.")
+print(massList)
 
 
 
